@@ -1,0 +1,43 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore model files (optional)
+*.pkl
+*.joblib
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# Python wheels
+pip-wheel-metadata/
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE configs
+.vscode/
+.idea/
+
+# Node modules (if added later)
+node_modules/
