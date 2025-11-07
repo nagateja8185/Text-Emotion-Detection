@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Emotion Detection 😄</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>🧠 Text Emotion Detection</h1>
+      <button id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Input Section -->
+    <section class="card">
+      <h2>📝 Type Here</h2>
+      <textarea id="textInput" placeholder="I am happy."></textarea>
+      <button id="submitBtn">🚀 Submit</button>
+    </section>
+
+    <!-- Output Sections -->
+    <section id="output" class="hidden">
+      <div class="card">
+        <h3>🧾 Original Text</h3>
+        <p id="originalText"></p>
+      </div>
+
+      <div class="card">
+        <h3>🎯 Prediction</h3>
+        <p><strong>Emotion:</strong> <span id="emotion"></span></p>
+        <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+      </div>
+
+      <div class="card">
+        <h3>📊 Prediction Probabilities</h3>
+        <div id="probabilities"></div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="historySection" class="card hidden">
+      <div class="history-header">
+        <h3 id="toggleHistory">📜 Prediction History ▼</h3>
+        <button id="clearHistory">🧹 Clear</button>
+      </div>
+      <div id="historyContent" class="collapsed">
+        <table id="historyTable">
+          <thead>
+            <tr>
+              <th>Text</th>
+              <th>Emotion</th>
+              <th>Confidence</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Nagateja | Powered by NLP 🧩</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
